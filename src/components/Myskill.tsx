@@ -6,7 +6,7 @@ const Myskill = () => {
     <div className="bg-blue-50 min-h-screen" id="about">
       <div className="mx-7 pt-9" data-aos="zoom-in-right">
         <p className="text-xl text-secondary text-center md:text-left ">
-          Let’s Colaborate
+          Let &apos;s Colaborate
         </p>
         <p className="text-3xl text-primary font-bold text-center md:text-left my-3">
           What Can I Do For Your Needs
