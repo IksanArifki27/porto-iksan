@@ -3,12 +3,12 @@ import React from "react";
 
 const Myskill = () => {
   return (
-    <div className="bg-blue-50 min-h-screen">
+    <div className="bg-blue-50 min-h-screen" id="about">
       <div className="mx-7 pt-9" data-aos="zoom-in-right">
-        <p className="text-xl text-blue-500 text-center md:text-left ">
+        <p className="text-xl text-secondary text-center md:text-left ">
           Let’s Colaborate
         </p>
-        <p className="text-3xl text-blue-600 font-bold text-center md:text-left my-3">
+        <p className="text-3xl text-primary font-bold text-center md:text-left my-3">
           What Can I Do For Your Needs
         </p>
         <p>
@@ -48,10 +48,10 @@ const Myskill = () => {
           data-aos="zoom-in"
         >
           <Image src={"/image/DG.png"} height={200} width={200} alt="webdev" />
-          <p className="text-2xl font-bold text-center text-blue-600">
+          <p className="text-2xl font-bold text-center text-secondary">
             Design Graphic
           </p>
-          <p>
+          <p className="text-justify">
             works to create effective visuals for the communication of a message
             or brand identity through images, typography, and other design
             elements. They combine creativity and engineering to produce designs

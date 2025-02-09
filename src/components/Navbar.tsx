@@ -24,11 +24,11 @@ const Navbar = () => {
     <div className={`relative navbar mx-7 w-full shadow-md z-10`}>
       <div
         className={`flex justify-between p-4 items-center fixed top-0 right-0 left-0  ${
-          scroll ? "bg-blue-600" : "bg-transparent "
+          scroll ? "bg-primary" : "bg-transparent "
         }`}
       >
         <div
-          className={`logo font-bold text-xl text-blue-500 ${
+          className={`logo font-bold text-xl text-primary ${
             scroll ? "text-white" : " "
           } `}
         >
@@ -38,30 +38,30 @@ const Navbar = () => {
           <li
             className={`${
               scroll ? "text-white" : " "
-            } text-blue-500 font-medium hover:text-secondary cursor-pointer`}
+            } text-primary font-medium hover:text-secondary cursor-pointer`}
           >
-            Home
+            <a href="#home">Home</a>
           </li>
           <li
             className={`${
               scroll ? "text-white" : " "
-            } text-blue-500 font-medium hover:text-secondary cursor-pointer`}
+            } text-primary font-medium hover:text-secondary cursor-pointer`}
           >
-            About{" "}
+            <a href="#about">About</a>
           </li>
           <li
             className={`${
               scroll ? "text-white" : " "
-            } text-blue-500 font-medium hover:text-secondary cursor-pointer`}
+            } text-primary font-medium hover:text-secondary cursor-pointer`}
           >
-            Portofolio
+            <a href="#skills">Skills</a>
           </li>
           <li
             className={`${
               scroll ? "text-white" : " "
-            } text-blue-500 font-medium hover:text-secondary cursor-pointer`}
+            } text-primary font-medium hover:text-secondary cursor-pointer`}
           >
-            Contact
+            <a href="#portofolio">Portofolio</a>
           </li>
         </ul>
         <div
@@ -79,21 +79,29 @@ const Navbar = () => {
         className={`${
           !toggle
             ? "hidden"
-            : "absolute py-4 w-full px-8 bg-blue-600 ease-in-out duration-500 "
+            : "fixed top-10 right-0 left-0 py-4 w-full px-8 bg-primary ease-in-out duration-300 "
         }`}
       >
-        <ul>
+        <ul className="">
           <li className="hover:text-gray-300 cursor-pointer py-3 text-white font-medium">
-            Home
+            <a href="#home" onClick={() => setToggle(false)}>
+              Home
+            </a>
           </li>
           <li className="hover:text-gray-300 cursor-pointer py-3 text-white font-medium">
-            About{" "}
+            <a href="#about" onClick={() => setToggle(false)}>
+              About
+            </a>
           </li>
           <li className="hover:text-gray-300 cursor-pointer py-3 text-white font-medium">
-            Portofolio
+            <a href="#skills" onClick={() => setToggle(false)}>
+              Skills
+            </a>
           </li>
           <li className="hover:text-gray-300 cursor-pointer py-3 text-white font-medium">
-            Contact
+            <a href="#portofolio" onClick={() => setToggle(false)}>
+              Portofolio
+            </a>
           </li>
         </ul>
       </div>
