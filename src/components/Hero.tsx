@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import React from "react";
-import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
   return (
     <div className="md:flex items-center min-h-screen  mx-7" id="home">
       {/* hero section */}
-      <div className="md:w-1/2 w-full  " data-aos="fade-right">
+      <div className="md:w-1/2 w-full " data-aos="fade-right">
         <p className=" font-medium md:text-xl my-5 md:text-left text-center mt-16">
-          Hi, I’m Mohammad Iksan Arifki
+          Hi, I&apos;m Mohammad Iksan Arifki
         </p>
         <h1 className="md:text-5xl text-3xl md:text-left text-center font-bold text-primary ">
           Web Developer &{" "}
@@ -17,13 +16,14 @@ const Hero = () => {
         </h1>
 
         <p className="text-justify  pt-3">
-          Hello, I'm Mohammad Iksan Arifki, a Web Developer and Graphic Designer
-          who is passionate about creating engaging and functional digital
-          experiences. With a background in technology and design, I have a
-          knack for designing websites that are not only responsive, but also
-          visually pleasing. If you are looking for a creative Web Developer and
-          dedicated Graphic Designer, I am ready to help make your ideas come to
-          life. Let's talk and see how I can help grow your project!
+          Hello, I &apos;m Mohammad Iksan Arifki, a Web Developer and Graphic
+          Designer who is passionate about creating engaging and functional
+          digital experiences. With a background in technology and design, I
+          have a knack for designing websites that are not only responsive, but
+          also visually pleasing. If you are looking for a creative Web
+          Developer and dedicated Graphic Designer, I am ready to help make your
+          ideas come to life. Let&apos;s talk and see how I can help grow your
+          project!
         </p>
         <div className="flex md:justify-normal justify-center">
           <a

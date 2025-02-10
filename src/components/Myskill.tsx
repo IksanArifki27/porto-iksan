@@ -13,11 +13,11 @@ const Myskill = () => {
         </p>
         <p>
           If you need a functional and responsive website, or an attractive
-          graphic design to strengthen your brand image, I'm here to help. I
-          believe that good collaboration can produce more innovative and
-          impactful work. Let's create something extraordinary together! Feel
-          free to contact me if you are interested in working together or would
-          like to discuss the project further.
+          graphic design to strengthen your brand image, I&apos;m here to help.
+          I believe that good collaboration can produce more innovative and
+          impactful work. Let&apos;s create something extraordinary together!
+          Feel free to contact me if you are interested in working together or
+          would like to discuss the project further.
         </p>
       </div>
 
