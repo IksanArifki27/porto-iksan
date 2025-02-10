@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Skill = () => {
@@ -18,50 +19,47 @@ const Skill = () => {
         data-aos="zoom-in"
       >
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md ">
-          <img src="/image/html.png" alt="" />
+          <Image src="/image/html.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/css.png" alt="" />
+          <Image src="/image/css.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/js.png" alt="" />
+          <Image src="/image/js.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md ">
-          <img src="/image/tailwind.png" alt="" />
+          <Image src="/image/tailwind.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/react.png" alt="" />
+          <Image src="/image/react.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/laravel.png" alt="" />
+          <Image src="/image/laravel.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/nodejs.png" alt="" />
+          <Image src="/image/nodejs.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/mysql.png" alt="" />
+          <Image src="/image/mysql.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/postgres.png" alt="" />
+          <Image src="/image/postgres.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/git.png" alt="" />
+          <Image src="/image/git.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/photoshop.png" alt="" />
+          <Image src="/image/photoshop.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/ai.png" alt="" />
+          <Image src="/image/ai.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/corel.png" alt="" />
+          <Image src="/image/corel.png" alt="" width={100} height={100} />
         </div>
         <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/figma.png" alt="" />
+          <Image src="/image/figma.png" alt="" width={100} height={100} />
         </div>
-        {/* <div className="md:w-20 md:h-20  w-16 h-16 rounded-md p-2 bg-blue-500 hover:bg-secondary shadow-md">
-          <img src="/image/ai.png" alt="" />
-        </div> */}
       </div>
     </div>
   );

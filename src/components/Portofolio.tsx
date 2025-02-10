@@ -1,11 +1,12 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
 const Portofolio = () => {
   const [current, setCurrent] = useState<number>(0);
-  const [size, setSize] = useState<number>(0);
+  const [ukuran, setUkuran] = useState<number>(0);
   const cards = [
     {
       image: "/image/sioktig.png",
@@ -26,14 +27,17 @@ const Portofolio = () => {
       link: "https://github.com/IksanArifki27/destinasi_batu",
     },
   ];
-  useEffect(() => {
+
+  const PortoResponsiv = () => {
     const lebar = window.screen.width;
     if (lebar > 410) {
-      setSize(3);
+      setUkuran(3);
     } else {
-      setSize(1);
+      setUkuran(1);
     }
-    console.log(size);
+  };
+  useEffect(() => {
+    PortoResponsiv();
   }, []);
 
   const handleNext = () => {
@@ -67,15 +71,17 @@ const Portofolio = () => {
         <div className="w-11/12 ">
           <div className="relative">
             <div className="flex space-x-4  ">
-              {cards.slice(current, current + size).map((card, index) => (
+              {cards.slice(current, current + ukuran).map((card, index) => (
                 <div
                   className="flex-none md:w-1/3 w-full  p-4 bg-white rounded-lg shadow-md"
                   key={index}
                 >
-                  <img
+                  <Image
                     className="w-full h-52 object-cover mb-4 rounded-lg"
                     src={card.image}
                     alt="Card"
+                    width={300}
+                    height={300}
                   />
                   <div className="flex justify-between">
                     <h3 className="text-xl font-medium">{card.title}</h3>
